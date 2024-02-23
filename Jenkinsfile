@@ -35,7 +35,7 @@ pipeline {
 
             steps {
                 
-                   sudo echo "This is master branch"
+                   echo "This is master branch"
                 }
             
         }
