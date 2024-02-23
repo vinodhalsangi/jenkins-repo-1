@@ -8,7 +8,8 @@ pipeline {
 
             steps {
                 
-                    sh 'sudo mvn clean compile'
+                    sh 'sudo su -'
+		    sh 'mvn clean compile'
                 }
             
         }
