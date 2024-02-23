@@ -8,7 +8,7 @@ pipeline {
 
             steps {
                 
-                    sh 'mvn clean compile'
+                    sh 'sudo mvn clean compile'
                 }
             
         }
@@ -17,7 +17,7 @@ pipeline {
 
             steps {
                 
-                    sh 'mvn test'
+                    sh 'sudo mvn test'
                 }
             
         }
@@ -26,7 +26,7 @@ pipeline {
         stage ('Install Stage') {
             steps {
                 
-                    sh 'mvn install'
+                    sh 'sudo mvn install'
                 }
             
         }
@@ -35,7 +35,7 @@ pipeline {
 
             steps {
                 
-                    echo "This is master branch"
+                   sudo echo "This is master branch"
                 }
             
         }
