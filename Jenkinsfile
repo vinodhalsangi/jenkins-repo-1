@@ -1,6 +1,6 @@
 pipeline {
     agent {
-    	label "slave-2"
+    	label "slave-1"
     }
 
     stages {
@@ -32,7 +32,7 @@ pipeline {
         stage ('Echo Branch') {
 
             steps {
-                echo "This is dev branch"
+                echo "This is master branch"
             } 
         }
     }
