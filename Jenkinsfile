@@ -35,7 +35,7 @@ pipeline {
 
             steps {
                 
-                    sudo echo "This is dev branch"
+                    echo "This is dev branch"
                 }
             
         }
