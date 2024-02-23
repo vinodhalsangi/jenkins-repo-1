@@ -4,6 +4,13 @@ pipeline {
     }
 
     stages {
+	stage ('maven install') {
+
+		steps {
+			sh 'sudo yum install maven -y'
+		}
+
+	}
         stage ('Compile Stage') {
 
             steps {
